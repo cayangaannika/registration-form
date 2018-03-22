@@ -4,6 +4,7 @@ label {
 
 html {
   font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
 }
 
 div {
@@ -17,12 +18,18 @@ p {
 
 .btn {
   background-color: #000;
-  color: #f2f2f2;
+  color: #fff;
+
   border: none;
 }
 
 @media only screen and (min-width: 60em) {
 
+  .left {
+    padding: 1rem;
+  }
 
-
+  .right {
+    padding: 1rem;
+  }
 }

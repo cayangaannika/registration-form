@@ -11,58 +11,57 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
+  <form method="POST" action="https://formspree.io/annika.cayanga@gmail.com">
+    <section class="contact">
+      <div class="max-length island">
+        <h1 class="pad-t-2 push-none not-bold pad-b">Want to go to Mars?</h1>
+        <p class="mega island-1 pad-t-0 pad-b">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
-  <section class="contact">
-    <div class="max-length gutter">
-      <h1 class="pad-t-2 push-none not-bold pad-b">Want to go to Mars?</h1>
-      <p class="mega island-1 pad-t-0 pad-b">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+        <fieldset>
+          <legend class="push-0 mega italic bold">Personal details</legend>
 
-      <fieldset>
-        <legend class="push-none mega italic bold">Personal details</legend>
-      </fieldset>
-
-      <form action="thanks" method="post">
-        <div class="grid">
-          <div class="unit xs-1 push-1-2">
-            <label for="name">Name</label>
-            <input id="name">
+          <div class="grid">
+            <div class="unit xs-1 m-1 l-1-2 push-1-2">
+              <label for="name">Name</label>
+              <input id="name" name="name" required>
+            </div>
+            <div class="unit xs-1 m-1 l-1-2 push">
+              <label for="number">Age</label>
+              <input id="number" type="number" required>
+            </div>
+            <div class="left unit xs-1 m-1 l-1-2 push">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required>
+            </div>
+            <div class="unit xs-1 m-1 l-1-2 push">
+              <label for="subject">Physical fitness</label>
+              <select id="subject" name="_subject">
+                <option>Super-human</option>
+                <option>Fit as a fiddle</option>
+                <option>Not terribly strong</option>
+                <option>A little couch-potato-y</option>
+              </select>
+            </div>
+            <div class="unit xs-1 m-1 l-1 push">
+              <label for="message">Address</label>
+              <textarea id="message" required></textarea>
+            </div>
           </div>
-          <div class="unit xs-1 push">
-            <label for="age">Age</label>
-            <input id="age">
-          </div>
-          <div class="unit xs-1 push">
-            <label for="email">Email</label>
-            <input id="email">
-          </div>
-          <div class="unit xs-1 push">
-            <label for="physical-fitness">Physical fitness</label>
-            <select id="physical-fitness">
-              <option>Super-human</option>
-              <option>Fit as a fiddle</option>
-              <option>Not terribly strong</option>
-              <option>A little couch-potato-y</option>
-            </select>
-          </div>
-          <div class="unit xs-1 push">
-            <label for="address">Address</label>
-            <textarea id="address" required></textarea>
-          </div>
-        </div>
+        </fieldset>
 
         <fieldset>
           <legend class="italic">Mission statement</legend>
+          <div class="push">
+            <label for="details">Why do you want to go to Mars?</label>
+            <textarea id="details" name="message" required></textarea>
+          </div>
         </fieldset>
 
-        <div class="push">
-          <label for="why-do-you-want-to-go-to-mars?">Why do you want to go to Mars?</label>
-          <textarea id="why-do-you-want-to-go-to-mars?" required></textarea>
-        </div>
+        <button class="btn btn-light center-text center-block" type="submit">Register for the trip!</button>
+        <input type="hidden" name="_subject" value="Request to join the mission">
 
-        <button class="btn btn-light text-center" type="submit">Register for the trip!</button>
-        <input type="hidden" name="Request to join the mission" value="Request to join the mission">
-      </form>
-    </div>
-  </section>
+      </div>
+    </section>
+  </form>
 </body>
 </html>
