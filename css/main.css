@@ -1,3 +1,7 @@
 label {
   display: block;
 }
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}

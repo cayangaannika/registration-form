@@ -4,22 +4,24 @@
   <meta charset="utf-8">
   <title>Registration form</title>
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 
   <section class="contact pad-t-2 pad-b-2">
     <div class="max-length">
       <h1>Want to go to Mars?</h1>
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <p class="kilo island">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
       <fieldset>
         <legend>Personal details</legend>
       </fieldset>
 
-      <form>
+      <form action="thanks" method="post">
         <div>
           <label for="name">Name</label>
           <input id="name">
@@ -51,11 +53,11 @@
         </fieldset>
 
         <div>
-          <label for="why-do-you-want-to-go-to-Mars?">Why do you want to go to Mars?</label>
-          <input id="why-do-you-want-to-go-to-Mars?">
+          <label for="why-do-you-want-to-go-to-mars?">Why do you want to go to Mars?</label>
+          <input id="why-do-you-want-to-go-to-mars?">
         </div>
 
-        <button type="submit">Register for the trip!</button>
+        <button class="btn btn-light" type="submit">Register for the trip!</button>
       </form>
     </div>
   </section>
